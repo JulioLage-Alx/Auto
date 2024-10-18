@@ -13,11 +13,11 @@ BROWSERS = [
 logging.basicConfig(level=logging.INFO, filename='upload_log.txt', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Caminhos para os arquivos e pastas
-pasta_videos = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS' 
-descricao_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\DESCRIÇAO\descricao.txt'
-linha_contador_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\CONTADOR\LINHA_CONTADOR.TXT'
-descricao_contador_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\CONTADOR\DESCRICAO_CONTADOR.TXT'
-cookies_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\COOKIES\cookies.txt'
+pasta_videos = r'VIDEOS' 
+descricao_path = r'DESCRIÇAO\descricao.txt'
+linha_contador_path = r'CONTADOR\LINHA_CONTADOR.TXT'
+descricao_contador_path = r'CONTADOR\DESCRICAO_CONTADOR.TXT'
+cookies_path = r'COOKIES\cookies.txt'
 TEMPO_ESPERA = 5  # Tempo de espera em segundos
 
 # Garante que o diretório do contador exista

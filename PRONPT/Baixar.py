@@ -3,8 +3,8 @@ import instaloader
 import Descricoes as dc
 import limp as lp
             
-pasta = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS'  # Caminho da pasta onde estão os arquivos
-arquivo_saida = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\DESCRIÇAO\descricao.txt'  # Caminho do arquivo de saída
+pasta = r'VIDEOS'  # Caminho da pasta onde estão os arquivos
+arquivo_saida = r'DESCRIÇAO\descricao.txt'  # Caminho do arquivo de saída
 
 def baixar_apenas_videos_perfil(nome_perfil, pasta_destino):
     os.makedirs(pasta_destino, exist_ok=True)
@@ -54,8 +54,8 @@ def baixar_apenas_videos_perfil(nome_perfil, pasta_destino):
     return video_salvos if video_salvos else "Nenhum vídeo foi salvo."
 
 # Caminhos para os arquivos e pastas
-caminho_perfis = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\PERFIS\usuarios.txt'
-pasta_videos = r'VIDEOS' 
+caminho_perfis = r'PERFIS\usuarios.txt'
+
 
 # Lê os nomes dos perfis do arquivo
 with open(caminho_perfis, 'r', encoding='utf-8') as perfis_file:
@@ -64,7 +64,7 @@ with open(caminho_perfis, 'r', encoding='utf-8') as perfis_file:
 # Baixa vídeos de todos os perfis listados
 todos_videos = []
 for perfil in perfis:
-    videos = baixar_apenas_videos_perfil(perfil, pasta_videos)
+    videos = baixar_apenas_videos_perfil(perfil, pasta)
     if isinstance(videos, list):
         todos_videos.extend(videos)
 
