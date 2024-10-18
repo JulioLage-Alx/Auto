@@ -1,0 +1,190 @@
+2024-10-18 18:28:38,520 - INFO - Iniciando upload do vídeo: C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS\2024-10-09_17-57-58_1.mp4 com descrição: Descrição do vídeo
+2024-10-18 18:28:38,520 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:28:38,520 - DEBUG - Create a chrome browser instance 
+2024-10-18 18:28:38,521 - INFO - ====== WebDriver manager ======
+2024-10-18 18:28:41,726 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:28:41,850 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:28:41,935 - INFO - Driver [C:\Users\julio\.wdm\drivers\chromedriver\win64\130.0.6723.58\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-18 18:28:43,148 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:28:45,210 - DEBUG - Posting [1mC:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS\2024-10-09_17-57-58_1.mp4[0m
+               with description: [1mDescrição do vídeo[0m
+2024-10-18 18:28:45,211 - DEBUG - [92mNavigating to upload page[0m
+2024-10-18 18:29:46,950 - ERROR - Failed to upload C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS\2024-10-09_17-57-58_1.mp4
+2024-10-18 18:29:46,952 - ERROR - Message: 
+Stacktrace:
+	GetHandleVerifier [0x010574D3+23139]
+	(No symbol) [0x00FDFCA4]
+	(No symbol) [0x00EBC2A3]
+	(No symbol) [0x00EFDC66]
+	(No symbol) [0x00EFDEAB]
+	(No symbol) [0x00F3B992]
+	(No symbol) [0x00F1FEC4]
+	(No symbol) [0x00F39564]
+	(No symbol) [0x00F1FC16]
+	(No symbol) [0x00EF216C]
+	(No symbol) [0x00EF30FD]
+	GetHandleVerifier [0x012EBAA3+2727987]
+	GetHandleVerifier [0x0134476E+3091710]
+	GetHandleVerifier [0x0133CF52+3060962]
+	GetHandleVerifier [0x010F1460+653808]
+	(No symbol) [0x00FE8E5D]
+	(No symbol) [0x00FE5A48]
+	(No symbol) [0x00FE5BE0]
+	(No symbol) [0x00FD8110]
+	BaseThreadInitThunk [0x76A97BA9+25]
+	RtlInitializeExceptionChain [0x777AC0CB+107]
+	RtlClearBits [0x777AC04F+191]
+
+2024-10-18 18:29:53,444 - INFO - Upload concluído para: C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS\2024-10-09_17-57-58_1.mp4
+2024-10-18 18:56:39,930 - INFO - Fazendo upload de: VIDEOS\2024-10-17_01-37-36.mp4
+2024-10-18 18:56:39,931 - INFO - Iniciando upload do vídeo: VIDEOS\2024-10-17_01-37-36.mp4 com descrição: link na bio
+ #Produto #Achado #presente #achado
+2024-10-18 18:56:39,932 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:56:39,932 - DEBUG - Create a chrome browser instance 
+2024-10-18 18:56:39,933 - INFO - ====== WebDriver manager ======
+2024-10-18 18:56:43,183 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:56:43,285 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:56:43,374 - INFO - Driver [C:\Users\julio\.wdm\drivers\chromedriver\win64\130.0.6723.58\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-18 18:56:45,078 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:56:47,086 - DEBUG - Posting [1mVIDEOS\2024-10-17_01-37-36.mp4[0m
+               with description: [1mlink na bio
+ #Produto #Achado #presente #achado[0m
+2024-10-18 18:56:47,086 - DEBUG - [92mNavigating to upload page[0m
+2024-10-18 18:57:04,424 - ERROR - Failed to upload C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS\2024-10-17_01-37-36.mp4
+2024-10-18 18:57:04,424 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x011174D3+23139]
+	(No symbol) [0x0109FCA4]
+	(No symbol) [0x00F7C2A3]
+	(No symbol) [0x00F5E00B]
+	(No symbol) [0x00FE5F3F]
+	(No symbol) [0x00FF8EB9]
+	(No symbol) [0x00FDFC16]
+	(No symbol) [0x00FB216C]
+	(No symbol) [0x00FB30FD]
+	GetHandleVerifier [0x013ABAA3+2727987]
+	GetHandleVerifier [0x0140476E+3091710]
+	GetHandleVerifier [0x013FCF52+3060962]
+	GetHandleVerifier [0x011B1460+653808]
+	(No symbol) [0x010A8E5D]
+	(No symbol) [0x010A5A48]
+	(No symbol) [0x010A5BE0]
+	(No symbol) [0x01098110]
+	BaseThreadInitThunk [0x76A97BA9+25]
+	RtlInitializeExceptionChain [0x777AC0CB+107]
+	RtlClearBits [0x777AC04F+191]
+
+2024-10-18 18:57:10,612 - INFO - Upload concluído para: 2024-10-17_01-37-36.mp4 em 30.68 segundos
+2024-10-18 18:57:15,626 - INFO - Fazendo upload de: VIDEOS\2024-10-17_01-37-36_1.mp4
+2024-10-18 18:57:15,627 - INFO - Iniciando upload do vídeo: VIDEOS\2024-10-17_01-37-36_1.mp4 com descrição: Confira o link na bio!
+ #Novidade #Promoção
+2024-10-18 18:57:15,628 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:57:15,628 - DEBUG - Create a chrome browser instance 
+2024-10-18 18:57:15,629 - INFO - ====== WebDriver manager ======
+2024-10-18 18:57:19,129 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:57:19,207 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:57:19,306 - INFO - Driver [C:\Users\julio\.wdm\drivers\chromedriver\win64\130.0.6723.58\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-18 18:57:20,516 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:57:21,925 - ERROR - Erro ao fazer upload de 2024-10-17_01-37-36_1.mp4: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x011174D3+23139]
+	(No symbol) [0x0109FCA4]
+	(No symbol) [0x00F7C2A3]
+	(No symbol) [0x00F5E00B]
+	(No symbol) [0x00FE5F3F]
+	(No symbol) [0x00FF8EB9]
+	(No symbol) [0x00FDFC16]
+	(No symbol) [0x00FB216C]
+	(No symbol) [0x00FB30FD]
+	GetHandleVerifier [0x013ABAA3+2727987]
+	GetHandleVerifier [0x0140476E+3091710]
+	GetHandleVerifier [0x013FCF52+3060962]
+	GetHandleVerifier [0x011B1460+653808]
+	(No symbol) [0x010A8E5D]
+	(No symbol) [0x010A5A48]
+	(No symbol) [0x010A5BE0]
+	(No symbol) [0x01098110]
+	BaseThreadInitThunk [0x76A97BA9+25]
+	RtlInitializeExceptionChain [0x777AC0CB+107]
+	RtlClearBits [0x777AC04F+191]
+
+2024-10-18 18:57:23,981 - INFO - Fazendo upload de: VIDEOS\2024-10-17_01-37-36_2.mp4
+2024-10-18 18:57:23,982 - INFO - Iniciando upload do vídeo: VIDEOS\2024-10-17_01-37-36_2.mp4 com descrição: link na bio
+ #Produto #Achado #presente #achado
+2024-10-18 18:57:23,982 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:57:23,983 - DEBUG - Create a chrome browser instance 
+2024-10-18 18:57:23,983 - INFO - ====== WebDriver manager ======
+2024-10-18 18:57:27,269 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:57:27,353 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:57:27,442 - INFO - Driver [C:\Users\julio\.wdm\drivers\chromedriver\win64\130.0.6723.58\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-18 18:57:28,653 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:57:30,112 - ERROR - Erro ao fazer upload de 2024-10-17_01-37-36_2.mp4: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x011174D3+23139]
+	(No symbol) [0x0109FCA4]
+	(No symbol) [0x00F7C2A3]
+	(No symbol) [0x00F5E00B]
+	(No symbol) [0x00FE5F3F]
+	(No symbol) [0x00FF8EB9]
+	(No symbol) [0x00FDFC16]
+	(No symbol) [0x00FB216C]
+	(No symbol) [0x00FB30FD]
+	GetHandleVerifier [0x013ABAA3+2727987]
+	GetHandleVerifier [0x0140476E+3091710]
+	GetHandleVerifier [0x013FCF52+3060962]
+	GetHandleVerifier [0x011B1460+653808]
+	(No symbol) [0x010A8E5D]
+	(No symbol) [0x010A5A48]
+	(No symbol) [0x010A5BE0]
+	(No symbol) [0x01098110]
+	BaseThreadInitThunk [0x76A97BA9+25]
+	RtlInitializeExceptionChain [0x777AC0CB+107]
+	RtlClearBits [0x777AC04F+191]
+
+2024-10-18 18:57:32,168 - INFO - Fazendo upload de: VIDEOS\2024-10-17_01-37-36_3.mp4
+2024-10-18 18:57:32,170 - INFO - Iniciando upload do vídeo: VIDEOS\2024-10-17_01-37-36_3.mp4 com descrição: Não perca essa oferta incrível! Link na bio!
+ #Desconto #Imperdível
+2024-10-18 18:57:32,171 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:57:32,172 - DEBUG - Create a chrome browser instance 
+2024-10-18 18:57:32,173 - INFO - ====== WebDriver manager ======
+2024-10-18 18:57:35,652 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:57:35,743 - INFO - Get LATEST chromedriver version for google-chrome
+2024-10-18 18:57:35,826 - INFO - Driver [C:\Users\julio\.wdm\drivers\chromedriver\win64\130.0.6723.58\chromedriver-win32/chromedriver.exe] found in cache
+2024-10-18 18:57:37,025 - DEBUG - [92mAuthenticating browser with cookies[0m
+2024-10-18 18:57:39,122 - DEBUG - Posting [1mVIDEOS\2024-10-17_01-37-36_3.mp4[0m
+               with description: [1mNão perca essa oferta incrível! Link na bio!
+ #Desconto #Imperdível[0m
+2024-10-18 18:57:39,123 - DEBUG - [92mNavigating to upload page[0m
+2024-10-18 18:57:39,772 - ERROR - Failed to upload C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS\2024-10-17_01-37-36_3.mp4
+2024-10-18 18:57:39,773 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x011174D3+23139]
+	(No symbol) [0x0109FCA4]
+	(No symbol) [0x00F7C2A3]
+	(No symbol) [0x00F5E00B]
+	(No symbol) [0x00FE5F3F]
+	(No symbol) [0x00FF8EB9]
+	(No symbol) [0x00FDFC16]
+	(No symbol) [0x00FB216C]
+	(No symbol) [0x00FB30FD]
+	GetHandleVerifier [0x013ABAA3+2727987]
+	GetHandleVerifier [0x0140476E+3091710]
+	GetHandleVerifier [0x013FCF52+3060962]
+	GetHandleVerifier [0x011B1460+653808]
+	(No symbol) [0x010A8E5D]
+	(No symbol) [0x010A5A48]
+	(No symbol) [0x010A5BE0]
+	(No symbol) [0x01098110]
+	BaseThreadInitThunk [0x76A97BA9+25]
+	RtlInitializeExceptionChain [0x777AC0CB+107]
+	RtlClearBits [0x777AC04F+191]
+
+2024-10-18 18:57:45,914 - INFO - Upload concluído para: 2024-10-17_01-37-36_3.mp4 em 13.74 segundos

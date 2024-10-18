@@ -19,5 +19,5 @@ def remove_non_mp4_files(folder_path):
                 print(f"Erro ao remover {filename}: {e}")
 
 # Exemplo de uso
-folder_path = r'VIDEOS'  # Altere para o caminho desejado
+folder_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS'  # Altere para o caminho desejado
 remove_non_mp4_files(folder_path)
