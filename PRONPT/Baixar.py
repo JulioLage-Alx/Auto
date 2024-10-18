@@ -49,9 +49,7 @@ def baixar_apenas_videos_perfil(nome_perfil, pasta_destino):
                 print(f"Erro ao baixar o vídeo: {e}")
 
 
-    dc.juntar_descricoes(pasta, arquivo_saida)
-    print(f"Descrições salvas em: {arquivo_saida}")
-    lp.remove_non_mp4_files(pasta)
+    
 
     return video_salvos if video_salvos else "Nenhum vídeo foi salvo."
 
@@ -71,3 +69,7 @@ for perfil in perfis:
         todos_videos.extend(videos)
 
 print("Todos os vídeos baixados:", todos_videos)
+
+dc.juntar_descricoes(pasta, arquivo_saida)
+print(f"Descrições salvas em: {arquivo_saida}")
+lp.remove_non_mp4_files(pasta)
