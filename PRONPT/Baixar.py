@@ -1,56 +1,73 @@
 import os
-import time
-import requests
-import undetected_chromedriver as uc
-from selenium.webdriver.common.by import By
+import instaloader
+import Descricoes as dc
+import limp as lp
+            
+pasta = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS'  # Caminho da pasta onde estão os arquivos
+arquivo_saida = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\DESCRIÇAO\descricao.txt'  # Caminho do arquivo de saída
 
-def baixar_video_instagram(post_url, pasta_destino):
+def baixar_apenas_videos_perfil(nome_perfil, pasta_destino):
     os.makedirs(pasta_destino, exist_ok=True)
-    shortcode = post_url.split('/')[-2]
 
-    options = uc.ChromeOptions()
-    driver = uc.Chrome(options=options)
+    loader = instaloader.Instaloader()
+
+    # Faz login se necessário (opcional)
+    # loader.login("seu_usuario", "sua_senha")  # Descomente e insira suas credenciais
 
     try:
-        driver.get(post_url)
-        print("Aguardando o carregamento da página...")
-        time.sleep(5)
-
-        # Procura o elemento de vídeo
-        video_elements = driver.find_elements(By.TAG_NAME, 'video')
-
-        if video_elements:
-            # Tenta pegar o src do vídeo
-            video_url = video_elements[0].get_attribute('src')
-        else:
-            # Procura por elementos <source>
-            source_elements = driver.find_elements(By.TAG_NAME, 'source')
-            if source_elements:
-                video_url = source_elements[0].get_attribute('src')
-            else:
-                print("Não foi possível encontrar o elemento de vídeo ou fonte.")
-                return
-
-        if video_url and not video_url.startswith("blob:"):
-            video_path = os.path.join(pasta_destino, f"{shortcode}.mp4")
-            if not os.path.exists(video_path):
-                # Usando requests para baixar o vídeo
-                response = requests.get(video_url, stream=True)
-                if response.status_code == 200:
-                    with open(video_path, 'wb') as f:
-                        for chunk in response.iter_content(chunk_size=1024):
-                            f.write(chunk)
-                    print(f"Vídeo baixado e salvo em: {video_path}")
-                else:
-                    print(f"Erro ao baixar o vídeo: {response.status_code}")
-            else:
-                print(f"O vídeo já foi baixado: {video_path}")
-        else:
-            print("O post não contém um vídeo acessível.")
-
+        profile = instaloader.Profile.from_username(loader.context, nome_perfil)
     except Exception as e:
-        print(f"Erro ao baixar o vídeo: {e}")
+        print(f"Erro ao acessar o perfil {nome_perfil}: {e}")
+        return []
 
-    finally:
-        driver.quit()
+    video_salvos = []  # Lista para armazenar os vídeos salvos
 
+    for post in profile.get_posts():
+        if post.is_video:
+            print(f"Baixando vídeo do perfil {nome_perfil}: {post.date_utc.strftime('%Y-%m-%d_%H-%M-%S')}.mp4")
+            try:
+                # Baixa o post, salvando os arquivos no diretório de destino
+                loader.download_post(post, target=pasta_destino)
+
+                # Renomeia o arquivo após o download
+                for file in os.listdir(pasta_destino):
+                    video_file_path = os.path.join(pasta_destino, file)
+                    if post.date_utc.strftime('%Y-%m-%d') in file and file.endswith('.mp4'):
+                        new_video_name = f"{post.date_utc.strftime('%Y-%m-%d_%H-%M-%S')}.mp4"
+                        new_video_path = os.path.join(pasta_destino, new_video_name)
+
+                        # Adiciona um sufixo se o novo nome já existir
+                        counter = 1
+                        while os.path.exists(new_video_path):
+                            new_video_path = os.path.join(pasta_destino, f"{post.date_utc.strftime('%Y-%m-%d_%H-%M-%S')}_{counter}.mp4")
+                            counter += 1
+
+                        os.rename(video_file_path, new_video_path)
+                        video_salvos.append(new_video_path)
+
+            except Exception as e:
+                print(f"Erro ao baixar o vídeo: {e}")
+
+
+    dc.juntar_descricoes(pasta, arquivo_saida)
+    print(f"Descrições salvas em: {arquivo_saida}")
+    lp.remove_non_mp4_files(pasta)
+
+    return video_salvos if video_salvos else "Nenhum vídeo foi salvo."
+
+# Caminhos para os arquivos e pastas
+caminho_perfis = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\PERFIS\usuarios.txt'
+pasta_videos = r'VIDEOS' 
+
+# Lê os nomes dos perfis do arquivo
+with open(caminho_perfis, 'r', encoding='utf-8') as perfis_file:
+    perfis = [linha.strip() for linha in perfis_file.readlines()]
+
+# Baixa vídeos de todos os perfis listados
+todos_videos = []
+for perfil in perfis:
+    videos = baixar_apenas_videos_perfil(perfil, pasta_videos)
+    if isinstance(videos, list):
+        todos_videos.extend(videos)
+
+print("Todos os vídeos baixados:", todos_videos)
