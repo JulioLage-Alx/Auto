@@ -7,7 +7,7 @@ Este projeto permite baixar vídeos de qualquer perfil do Instagram e postá-los
 
 O projeto possui a seguinte estrutura de diretórios:
 
-
+```
 Auto/
 ├── CONTADOR/
 ├── COOKIES/
@@ -21,7 +21,7 @@ Auto/
 │   └── posti.py
 ├── VIDEOS/
 └── .gitattributes
-
+```
 
 ### Diretórios
 
@@ -82,4 +82,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## Contato
 
-Para mais informações ou sugestões, entre em contato com [juliolage.alx@gmail.com](mailto:juliolage.alx@gmail.com).
+Para mais informações ou sugestões, entre em contato com [seu_email@example.com](mailto:juliolage.alx@gmail.com).
