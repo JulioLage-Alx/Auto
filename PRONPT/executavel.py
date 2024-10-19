@@ -17,7 +17,7 @@ def escreveusuario():
     def salvar_usuario(event=None):  # Adicionando 'event' como argumento
         texto_usuario = entry_usuario.get().strip()
         if texto_usuario:
-            caminho = '...\Auto\PERFIS\usuarios.txt'
+            caminho = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\PERFIS\usuarios.txt'
             escrever_no_txt(caminho, texto_usuario)
             messagebox.showinfo("Sucesso", f"Usuário '{texto_usuario}' adicionado com sucesso!")
             entrada_janela.destroy()

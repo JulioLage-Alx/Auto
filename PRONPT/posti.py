@@ -8,10 +8,10 @@ import emoji
 def posta():
     logging.basicConfig(level=logging.INFO, filename='upload_log.txt', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 
-    pasta_videos = '...\\Auto\\VIDEOS'
-    descricao_path = '...\\Auto\\DESCRIÇAO\\descricao.txt'  # Caminho completo
-    linha_contador_path = '...\\BOOT-TIKTPK\\Auto\\CONTADOR\\LINHA_CONTADOR.TXT'
-    cookies_path = '...\\TiktokAutoUploader\\CookiesDir\\tiktok_session-contaone.cookie'
+    pasta_videos = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS' 
+    descricao_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\DESCRIÇAO\descricao.txt'  # Caminho completo
+    linha_contador_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\CONTADOR\LINHA_CONTADOR.TXT'
+    cookies_path = r'C:\Users\julio\OneDrive\Documentos\GitHub\TiktokAutoUploader\CookiesDir\tiktok_session-contaone.cookie'
     TEMPO_ESPERA = 5
 
     os.makedirs(os.path.dirname(linha_contador_path), exist_ok=True)

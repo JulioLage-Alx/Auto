@@ -3,8 +3,8 @@ import instaloader
 import Descricoes as dc
 import limp as lp
             
-pasta ='...\\Auto\\VIDEOS'   # Caminho da pasta onde estão os arquivos
-arquivo_saida = '...\\Auto\\DESCRIÇAO\\descricao.txt'  # Caminho do arquivo de saída
+pasta = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS'  # Caminho da pasta onde estão os arquivos
+arquivo_saida = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\DESCRIÇAO\descricao.txt'  # Caminho do arquivo de saída
 
 def baixar_apenas_videos_perfil(nome_perfil, pasta_destino):
     os.makedirs(pasta_destino, exist_ok=True)
@@ -56,7 +56,7 @@ def baixar_apenas_videos_perfil(nome_perfil, pasta_destino):
 
 def baixa():
 # Caminhos para os arquivos e pastas
-    caminho_perfis = '...\Auto\PERFIS\usuarios.txt'
+    caminho_perfis = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\PERFIS\usuarios.txt'
 
 
 # Lê os nomes dos perfis do arquivo

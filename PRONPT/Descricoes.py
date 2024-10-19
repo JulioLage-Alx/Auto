@@ -11,8 +11,8 @@ def juntar_descricoes(pasta_origem, arquivo_saida):
                     outfile.write(conteudo + '\n')  # Adiciona uma nova linha após cada descrição
 
 # Exemplo de uso
-pasta = '...\\Auto\\VIDEOS'  # Caminho da pasta onde estão os arquivos
-arquivo_saida = '...\\Auto\\DESCRIÇAO\\descricao.txt'  # Caminho do arquivo de saída
+pasta = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\VIDEOS'  # Caminho da pasta onde estão os arquivos
+arquivo_saida = r'C:\Users\julio\OneDrive\Documentos\GitHub\Auto\DESCRIÇAO\descricao.txt'  # Caminho do arquivo de saída
 
 juntar_descricoes(pasta, arquivo_saida)
 print(f"Descrições salvas em: {arquivo_saida}")
